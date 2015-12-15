@@ -4,7 +4,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class ExampleSubsystem extends Subsystem {
 
-	@Override
-	public void initDefaultCommand() {
-	}
+    @Override
+    public void initDefaultCommand() {
+    }
 }

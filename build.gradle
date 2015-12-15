@@ -1,10 +1,10 @@
 buildscript {
   repositories {
-	mavenCentral()
-	maven {
-		name = "GradleRIO"
-		url = "http://dev.imjac.in/maven"
-	}
+      mavenCentral()
+      maven {
+          name = "GradleRIO"
+          url = "http://dev.imjac.in/maven"
+      }
   }
   dependencies {
     classpath group: 'jaci.openrio.gradle', name: 'GradleRIO', version: '+'
