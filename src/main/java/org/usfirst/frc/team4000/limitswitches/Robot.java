@@ -6,11 +6,12 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team4000.limitswitches.commands.ExampleCommand;
-import org.usfirst.frc.team4000.limitswitches.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team4000.limitswitches.subsystems.PotServoSubsystem;
 
 public class Robot extends IterativeRobot {
 
-    public static final Subsystem exampleSubsystem = new ExampleSubsystem();
+    public static final PotServoSubsystem potServo = new PotServoSubsystem();
+    
     public static OI oi;
 
     Command autonomousCommand;
