@@ -12,19 +12,23 @@ public class RobotMap {
 	private static final int SERVO_CHANNEL = 0;
 	private static final int TALON_CHANNEL = 0;
 	
-	private static final double POT_SCALE = 0;
+	private static final double POT_SCALE = 360;
 
-	private static final double POT_OFFSET = 0;
+	private static final double POT_OFFSET = 30;
 
 	public static DigitalInput limitSwitch;
 
-    public static Potentiometer pot = new AnalogPotentiometer(POT_CHANNEL, POT_SCALE, POT_OFFSET);
+    public static Potentiometer pot;
     
-    public static Servo exampleServo = new Servo(SERVO_CHANNEL);
+    public static Servo exampleServo;
     
-    public static Talon exampleTalon = new Talon(TALON_CHANNEL);
+    //public static Talon exampleTalon = new Talon(TALON_CHANNEL);
     
     public static void init() {
         limitSwitch = new DigitalInput(1);
+        
+        pot = new AnalogPotentiometer(POT_CHANNEL, POT_SCALE, POT_OFFSET);
+        
+        exampleServo = new Servo(SERVO_CHANNEL);
     }
 }

@@ -10,7 +10,7 @@ import org.usfirst.frc.team4000.limitswitches.subsystems.PotServoSubsystem;
 
 public class Robot extends IterativeRobot {
 
-    public static final PotServoSubsystem potServo = new PotServoSubsystem();
+    public static PotServoSubsystem potServo = null;
     
     public static OI oi;
 
@@ -41,7 +41,9 @@ public class Robot extends IterativeRobot {
     @Override
     public void robotInit() {
         oi = new OI();
-        autonomousCommand = new ExampleCommand();
+        RobotMap.init();
+        //autonomousCommand = new ExampleCommand();
+        potServo = new PotServoSubsystem();
     }
 
     @Override
